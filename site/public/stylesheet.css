@@ -1,0 +1,138 @@
+/*Version 1.0*/
+
+
+
+
+body {
+    /*background-image: url("circle_blur.png");*/
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+  height: 10000px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h2{
+	font-weight: 300;
+	font-size: 5rem;
+}
+
+
+/*Background circles*/
+
+.circle > img { 
+  position: fixed; 
+  height: auto;
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: translate3d(0,0,0);
+  transform: translateZ(0);
+  z-index: -1;
+}
+
+.left_c > img{
+	width: 95%;
+	left: -25%;
+	margin-top: -45vw;
+}
+
+.right_c > img{
+	width: 75%;
+	right: -8%;
+	margin-top: 10vw;
+}
+/*Background circles ends*/
+
+
+/*menu*/
+.content {
+	font-size: 380%;
+    color: black;
+	background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border: solid 2px black;
+    text-align: center;
+  	transition-property: all;
+	transition-duration: 0.5s;
+    opacity: 0.94; 
+}
+
+a:link, a:visited{
+text-decoration:none;
+}
+a:hover, a:active{
+color: black;
+text-decoration:none;
+}
+
+.content:hover{
+    width: 340px;
+    opacity: 0.98; 
+}
+
+/*menu end*/
+
+.intro_pc{
+	background-color:white;
+	width: 43vw;
+	opacity: .9;
+	font-size: 3.5vw;
+	line-height: 4vw;
+	margin-top: 6vw;
+	padding: .5em;
+	padding-left: 7vw;
+	font-weight: 300;
+	-webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+	text-shadow: 0 1px 1px grey;
+
+
+}
+
+.intro_text{
+	color: grey;
+	padding-top: 28vw;
+	line-height: 14vw;
+	font-weight: 300;
+	white-space: nowrap;
+	text-shadow: 0 1px 1px #191919;
+}
+
+#About{
+    margin-top: 0;
+    background-color: lightblue;
+	position: relative;
+}
+
+#Skills{
+    margin-top: 20%;
+    height: 100vh;
+    background-color: lightcoral;
+    opacity: 0.95;
+}
+
+#Projects{
+    margin-top: 20%;
+    height: 100vh;
+    background-color: lightgreen;
+    opacity: 0.95;
+}
+
+#Contact{
+    margin-top: 20%;
+    height: 100vh;
+    background-color: lightslategray;
+    opacity: 0.95;
+}
+
+
+

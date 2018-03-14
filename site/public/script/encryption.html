@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Zodiac Cypher</title> 
+</head>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body> 
+
+<div class="form-group">
+Text: <br/><input type="text" name="text" value="" placeholder="Type here" id="text" />
+ 
+<button id="button" >submit</button> 
+<div id="box"></div>
+</div>
+<script> 
+var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]; 
+var encrypt_alph = ["&", "v", "_", "i", "~", "c", "0", "f", "7", "e", "4", "%", "p", "k", "6", "5", "t", "!", "q", "l", "*", "y", "`", "^", "#", "9"]; 
+
+
+$(document).ready(function(e){ 
+$("#button").click(function(){ 
+var input = $('#text').val();
+var encoding = input.toLowerCase();
+var answer = []; 
+/*console.log(encoding);*/ 
+
+for (var i = 0, len = encoding.length; i < len; i++) { 
+for (var a = 0; a < alphabet.length; a++){ 
+/*console.log("alphabet: " + alphabet[a]);*/ 
+if(encoding[i] == ' '){ 
+answer.push(' '); 
+break; 
+} 
+else if(encoding[i] === alphabet[a]){ 
+/*console.log("I did it ");*/ 
+answer.push(encrypt_alph[a]); 
+/*encoding[0] = encrypt_alph[a]; 
+console.log("result: " + encoding[i]);*/ 
+break; 
+} 
+} 
+
+} 
+
+document.getElementById("box").innerHTML = answer.join("");; 
+}); 
+}); 
+</script> 
+
+</body> 
+</html>

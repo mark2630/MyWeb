@@ -1,0 +1,71 @@
+html{
+	margin-top: 1%;
+	
+}
+@font-face {
+    font-family: "Zodiac";
+    src: url(Zodiac_Cipher.ttf) format("truetype");
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 767px) {
+
+body{
+	font-size: 150% !important;
+}
+
+.form-group input[type=text]{
+	width: 100% !important;
+}
+
+#box{
+	font-size: 15vw !important;
+}
+
+}
+body {
+color: white;
+background-color: black;
+background-attachment: fixed;
+font-family: 'Josefin Slab', serif;
+font-size: 150%;
+}
+
+
+#box{
+	font-family: "Zodiac", Verdana, Tahoma;
+	font-size: 10vw;
+	color:#8a0707;
+	width: 100%;
+	word-wrap:break-word;
+	
+}
+
+.form-group input[type=text] {
+
+  height: 44px;
+  font-size: 16px;
+  width: 25%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#button {
+	-webkit-appearance: none;
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4d90fe;
+  padding: 13px 20px;
+  font-family: roboto;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
