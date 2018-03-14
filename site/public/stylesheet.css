@@ -109,15 +109,15 @@ text-decoration:none;
 
 #About{
     margin-top: 0;
-    background-color: lightblue;
+    background-color: white;
 	position: relative;
 }
 
 #Skills{
     margin-top: 20%;
-    height: 100vh;
-    background-color: lightcoral;
+    background-color: white;
     opacity: 0.95;
+	padding-bottom: 1%;
 }
 
 #Projects{
