@@ -148,15 +148,24 @@ text-decoration:none;
 	position: relative;
 }
 
+
+
 #Skills{
     margin-top: 20%;
     background-color: white;
-    opacity: 0.95;
 	padding: 2% 0;
 	 box-shadow: 0 0 3px #ccc;
 	}
 
+	
+	.progress-bar {
+width:0;
+color: black;
+  transition-duration: 3s;
+}
 
+
+	
 #Projects{
     margin-top: 20%;
     height: 100vh;

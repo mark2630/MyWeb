@@ -32,3 +32,29 @@ $('a[href*="#"]')
       $(".hide_on_scroll").css("opacity", 1 - 
       $(window).scrollTop() / 400);
   });
+  
+
+$('.bar_text').hide();
+  
+	$(window).scroll(function() {
+   var hT = $('#Skills').offset().top,
+       hH = $('#Skills').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+   if (wS > (hT+hH-wH)){
+	   setTimeout(function () {
+			$('.bar_text').fadeIn("slow");
+		}, 800);
+	   
+		  $(document).ready(function() {
+		  $('.progress .progress-bar').css("width",
+					function() {
+						return $(this).attr("aria-valuenow") + "%";
+					}
+			)
+		});
+   }
+});
+	
+
+
