@@ -45,8 +45,6 @@ body {
 	background-color: white;
 	font-family: 'Open Sans', sans-serif;
   height: 10000px;
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
 h2{
@@ -102,10 +100,11 @@ h2{
 }
 
 a:link, a:visited{
+color:#333333; 	
 text-decoration:none;
 }
 a:hover, a:active{
-color: black;
+color: #333333;
 text-decoration:none;
 }
 
@@ -116,24 +115,24 @@ text-decoration:none;
 
 /*menu end*/
 
-.intro_pc{
-	background-color:white;
-	width: 43vw;
-	opacity: .9;
-	font-size: 3.5vw;
-	line-height: 4vw;
-	margin-top: 6vw;
-	padding: .5em;
-	padding-left: 7vw;
-	font-weight: 300;
-	-webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
-	clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
-	text-shadow: 0 1px 1px grey;
 
-
+#intro_pc{
+	position: relative;
+	top: 35vh;
+	color: #333333;
+	font-size: 7vw;
+	font-weight: 700;
+	line-height: 8vw;
+	text-shadow: -.1vw 0 .2vw white, 0 .1vw .2vw white, .1vw 0 .2vw white, 0 -.1vw .2vw white;
 }
 
-.intro_text{
+#intro_menu{
+	color: #333333 ;
+	margin-top: 10vw;
+	font-size: 4vw;
+}
+
+.intro_mobile{
 	color: grey;
 	padding-top: 28vw;
 	line-height: 14vw;
