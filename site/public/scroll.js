@@ -41,7 +41,7 @@ $('.bar_text').hide();
        hH = $('#Skills').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
+   if (wS > (hT+hH-wH*1.5)){
 	   setTimeout(function () {
 			$('.bar_text').fadeIn("slow");
 		}, 800);
