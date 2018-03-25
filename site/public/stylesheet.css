@@ -4,6 +4,16 @@
 		height: 35px;
 	}
 
+
+@media (max-width: 576px) {
+	.contact_images{
+		width:20vw;
+	}
+	.contacts_text{
+		font-size: 6vw !important;
+	}
+}
+
 @media (min-width: 576px) { 
 	.progress{
 		height: 35px;
@@ -44,13 +54,22 @@ body {
 	background-repeat: no-repeat;
 	background-color: white;
 	font-family: 'Open Sans', sans-serif;
-  height: 10000px;
+}
+
+footer{
+	background-color: white;
+	padding: 15px;
+	margin-top: 10vw;
+	font-size: 13px;
 }
 
 h2{
 	font-weight: 300;
 	font-size: 5rem;
+	padding-top: 10px;
+	padding-bottom: 30px;
 }
+
 
 
 /*Background circles*/
@@ -60,6 +79,7 @@ h2{
   height: auto;
   pointer-events: none;
   -webkit-backface-visibility: hidden;
+  perspective: 1000;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0,0,0);
   -webkit-transform: translateZ(0);
@@ -142,7 +162,7 @@ text-decoration:none;
 }
 
 #About{
-    margin-top: 0;
+    margin-top: 10%;
     background-color: white;
 	position: relative;
 }
@@ -150,10 +170,10 @@ text-decoration:none;
 
 
 #Skills{
-    margin-top: 20%;
+    margin-top: 10%;
     background-color: white;
-	padding: 2% 0;
-	 box-shadow: 0 0 3px #ccc;
+	padding-bottom: 2%;
+	box-shadow: 0 0 3px #ccc;
 	}
 
 	
@@ -167,18 +187,21 @@ text-shadow: 0 1px 1px grey;
 
 	
 #Projects{
-    margin-top: 20%;
-    height: 100vh;
-    background-color: lightgreen;
-    opacity: 0.95;
+	margin-top: 10%;
+	padding-bottom: 40px;
+    background-color: white;
 }
 
 #Contact{
-    margin-top: 20%;
-    height: 100vh;
-    background-color: lightslategray;
-    opacity: 0.95;
+    margin-top: 10%;
+	background-color: white;
+	padding-bottom: 40px;
+
 }
 
-
+.contacts_text{
+	font-size: 3.5vw;
+	font-weight: 300;
+	
+}
 
