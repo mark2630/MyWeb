@@ -35,12 +35,14 @@
 
 	<!--BackGround end-->
 
+	<!--navbar starts-->
+	<div href="javascript:void(0)" class="hamburger_container" onclick="myFunction(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+
 	<div id="myNav" class="overlay">
-		<div href="javascript:void(0)" class="hamburger_container" onclick="myFunction(this)">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
-		</div>
 		<div class="overlay-content">
 			<a href="#About" class="nav_links">About</a>
 			<a href="#Skills" class="nav_links">Skills</a>
@@ -48,30 +50,19 @@
 			<a href="#Contacts" class="nav_links">Contacts</a>
 		</div>
 	</div>
-
-
-
-
-
-
-	<div id="home">
-		<!--trigger for home-->
-	</div>
-
-
-
+	<!--navbar end-->
 
 	<div class="d-none d-sm-block" style="height: 100vh;">
 		<div id="intro_pc" class="text-center">Front End
 			<br/>Web Developer</div>
 	</div>
 
-	<div style="height:100vh">
-		<div class="d-block d-sm-none text-center">
+	<div class="d-block d-sm-none" style="height:100vh">
+		<div class="text-center">
 			<img src="images/me/Mark_Golubev_circle.png" class="img-fluid" style="max-width: 60%; margin-top: 10%;" alt="">
 		</div>
 
-		<div class="container intro_mobile d-block d-sm-none">
+		<div class="container intro_mobile">
 			<div class="row no-gutters">
 				<div class="col-12 text-center" style="font-size:23vw;">HELLO</div>
 				<br/>
@@ -86,56 +77,29 @@
 	</div>
 
 
-	<!--<img src="images/me/mark_golubev_5.jpg" class="img-fluid" style="max-width: 80%; left: 30%; top: 3vh; z-index: -1; position: absolute;  border: 1vw solid white;" alt="">-->
-	</div>
 
-	<!--
-<nav class="navbar navbar-default " style="z-index:1;">
-  <div class="container-fluid">
-
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-				<li><a href="#Home">Home</a></li>
-				<li><a href="#About">About</a></li>
-				<li><a href="#Skills">Skills</a></li>
-				<li><a href="#Projects">Projects</a></li>
-				<li><a href="#Contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
--->
-
-
-
-	<div id="About">
+	<div class="sections about" id="About">
 		<div class="row no-gutters">
-			<div class="d-none d-sm-none d-md-block col-md-4 col-lg-4 ">
+			<div class="d-none d-sm-none d-md-block col-md-5 col-lg-4 ">
 				<img src="images/me/mark_golubev_1.jpg" class="img-fluid" style="max-width: 100%; border-right: 20px solid grey;" alt="">
 			</div>
 
-			<div class="col-sm-8 col-md-8 col-lg-8 " style="padding: 5px 30px;">
-				<h2 class="text-center">About me</h2>
-				<div class="" id="about_text">What do you need to know about me?
-					<br/> I'm a Front End Web Developer who loves simple and detailed design.
-					<br/> All my life I had passion to do something creative and Web Developing is what made me who I am right now. </div>
-			</div>
+			<div class="col-md-7 col-lg-8 about_full">
+				<h2 class="text-center">About</h2>
+				<div class="about_text">
+					I’m Mark Golubev a front end web developer based in the Los Angeles. I love to create and build websites which are mobile
+					friendly, fully responsive, minimal and at the same time attractive and user-friendly for individuals, startups, businesses
+					etc. I built my portfolio site from the grounds up by using all the skills that I know.
+					<br/>
+					<br/> While I'm not debugging the code, I love to hang out with my friends, play video games, listen to music and travel.
+				</div>
 
+			</div>
 		</div>
 	</div>
 
 
-	<div id="Skills">
+	<div class="sections" id="Skills">
 		<h2 class="text-center">Skills</h2>
 		<br/>
 		<div class="row no-gutters">
@@ -203,8 +167,8 @@
 
 
 
-	<div id="Projects">
-		<h2 class="text-center">Projects</h2>
+	<div class="sections" id="Projects">
+		<h2 class="text-center">My Work</h2>
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -212,11 +176,15 @@
 				</div>
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 					<h3 class="text-center">Belava</h3>
-					UX Design, aspdotnetstorefront theme customization
-					<p>test text test text test text test text test text test text test text test text test text test text test text test text
-						test text test text test text test text test text test text test text test text test text test text test text test
-						text
-					</p>
+					Manage corporate AspDotNetStorefront website
+					<br/> 372 days 4 hours and 18 minutes work experience
+					<ul>
+						<li>Supporting responsive web design principles ensure proper site rending across major popular devices</li>
+						<li>Developed custome features, floating advertisements and geomaps utilizing Google API</li>
+						<li>Optimized website for maximum speed and performance</li>
+						<li>Monitored website traffic and Search Engine ranking for the best ranking scores</li>
+					</ul>
+
 					<a href="https://www.belava.com/" target="_blank" class="btn btn-outline-dark" role="button">VISIT WEBSITE</a>
 				</div>
 			</div>
@@ -227,12 +195,16 @@
 				</div>
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 					<h3 class="text-center">Elora Salon</h3>
-					UX Design, custome made
-					<p>test text test text test text test text test text test text test text test text test text test text test text test text
-						test text test text test text test text test text test text test text test text test text test text test text test
-						text
-					</p>
-					<a href="http://www.elorasalon.com/" target="_blank" class="btn btn-outline-dark" role="button">VISIT WEBSITE</a>
+					<span>UI Design, Custom website for promotion purposes</span>
+					<p>Developed responsive website from ground up in tight deadlines utilizing up to date technologies like
+						<br/>
+						<ul>
+							<li>HTML5 with CSS3</li>
+							<li>JQuery library</li>
+							<li>Bootstrap toolkit</li>
+						</ul>
+						<p>Organized and optimized images with Photoshop for the best site perforamence and user expiriense.</p>
+						<a href="http://www.elorasalon.com/" target="_blank" class="btn btn-outline-dark" role="button">VISIT WEBSITE</a>
 				</div>
 			</div>
 
@@ -241,7 +213,7 @@
 
 
 
-	<div id="Contacts">
+	<div class="sections" id="Contacts">
 		<h2 class="text-center">Contacts</h2>
 		<div class="container contacts_text">
 			<div class="row">
