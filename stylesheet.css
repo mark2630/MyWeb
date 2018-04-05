@@ -135,9 +135,6 @@ h2{
 .sections{
 	margin-top: 10% !important;
 }
-.overlay a:hover {
-	font-size: 7vw !important;	
-}
 }
 
 /*Background circles*/
@@ -276,7 +273,6 @@ text-decoration:none;
 	font-size: 7vw;
 	font-weight: 700;
 	line-height: 8vw;
-	text-shadow: -.1vw 0 .2vw white, 0 .1vw .2vw white, .1vw 0 .2vw white, 0 -.1vw .2vw white;
 }
 
 
