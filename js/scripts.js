@@ -1,3 +1,13 @@
+//loading
+jQuery(document).ready(function($) {  
+
+  
+  $(window).bind("load", function() {
+    $('#preloader').fadeOut('slow',function(){$(this).remove();});
+  });
+  
+  });
+
 //spin
 
 $(window).scroll(function() {
