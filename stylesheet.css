@@ -20,7 +20,7 @@ h2{
 	padding-bottom: 15px;
 	margin:0;
 }
-
+/*
 #preloader {
 	position: fixed;
 	left: 0;
@@ -32,7 +32,7 @@ h2{
 	background: white url('images/svg/loading.svg') no-repeat center center;
 	background-size: 13vw;
 }
-
+*/
 
 .progress{
 	height: 35px;

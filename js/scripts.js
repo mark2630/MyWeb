@@ -1,4 +1,5 @@
-//loading
+//loadin
+/*
 jQuery(document).ready(function($) {  
 
   
@@ -7,7 +8,7 @@ jQuery(document).ready(function($) {
   });
   
   });
-
+*/
 //spin
 
 $(window).scroll(function() {
