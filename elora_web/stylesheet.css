@@ -1,0 +1,307 @@
+
+@font-face {
+    font-family: "Univers";
+    src: url(UniversLTPro.otf) format("truetype");
+}
+body {
+/*  background: url(images/background3.jpg);
+background-attachment: fixed;*/
+font-family: 'Josefin Slab', serif;
+font-size: 1.7vw;
+font-family: "Univers", Verdana, Tahoma;
+
+}
+
+#background_wrap {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 60%;
+    background-image: url('images/background3.jpg');
+    background-attachment: fixed;
+}
+
+footer{
+	background-color: white;
+	margin-top: 3%;
+	padding: 2% 0;
+	font-size: 1vw;
+}
+
+ul{
+	list-style: none;
+}
+
+hr{
+	margin: 10px;
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 767px) {
+.logo_font{
+	font-size: 9vw !important;
+}
+body{
+	font-size: 4.7vw !important;
+}
+footer{
+	font-size: 3.5vw !important;
+}
+
+.copyright{
+	font-size: 3vw !important;
+}
+
+h2{
+	font-size: 7vw !important;
+}
+.logo_tablet{
+	width: 70%;
+	dispay: block;
+	margin: auto;
+}
+		.wrapper_logo_tablet{
+			margin: 2%;
+		}
+		
+.top_wrapper{
+	   padding: 0 !important;
+   margin: 0 !important;
+}
+	
+.buy_button{
+	font-size: 4vw !important;
+}
+
+.intro{
+	padding: 15px !important;
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+		.logo_tablet{
+			width: 35%;
+			dispay: block;
+			margin: auto;
+		}
+		.wrapper_logo_tablet{
+			margin: 2%;
+		}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	/*.logo_font{
+		margin-bottom: 10%;
+	}
+	*/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+
+a:link {
+    text-decoration: none;
+	    color: #332f30;
+}
+a:visited {
+    text-decoration: none;
+	    color: #332f30;
+}
+a:active {
+    text-decoration: none;
+	    color: #332f30;
+}
+
+.image_border{
+	border: 10px solid #332f30;
+}
+
+.image_padding{
+	padding: 2% !important;
+}
+
+#SupCartBox{
+	  display: block;      
+  position: absolute;
+  /*background-color: blue;*/
+  margin-top: 6%;
+  margin-left: 10%;
+  width: 27%;
+  height: 40%;
+  z-index:1;
+  opacity: 0.4;
+}
+
+#PedDollyBox{
+  display: block;      
+  position: absolute;
+  /*background-color: red;*/
+  margin-top: 21%;
+  margin-left: 38%;
+  width: 47%;
+  height: 44%;
+  z-index:1;
+  opacity: 0.4;
+}
+.intro{
+	background-color: white;
+	opacity: .9;
+	color:#332f30;
+	padding: 25px;
+	margin-top:3.5%;
+}
+
+.logo_font{
+	font-size: 4.5vw;
+}
+.intro_font{
+	margin-bottom: 2%;
+}
+
+.product_title{
+	padding:5px;
+	background-color: white;
+	margin-top: 5%;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+	position: sticky;
+	top:0;
+	z-index:1;
+}
+	
+	
+.buy_button{
+	font-size: 1.5vw;
+}
+
+.buy{
+	background-color: white;
+	padding:2.5%;
+	transition: all .5s ease;
+}
+
+.buy:hover{
+	background-color: #332f30;
+	color:white;
+
+}
+	
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+
+.copyright{
+	margin-top: 3%;
+	font-size: .9vw;
+}
+
+/*---------------------------
+
+Scroll up
+
+-----------------------------*/
+
+.cd-top {
+	z-index:1;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px white;
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(51,47,48,0.9) url(images/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+#banner{
+  z-index: 2;
+  background-color: lightgray;
+  color: black;
+  opacity: 0.95;
+  font-size: 14px;
+  width: 100%;
+  padding: 20px;
+  margin: 0px;
+  position: fixed;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/*close button*/
+.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 10px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 15px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
